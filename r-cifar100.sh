@@ -1,0 +1,1 @@
+python main.py --gpu_id 5 --dataset_dir '/data/dataset/liqiwei/OCL/data/' --batch_size 10 --optimi SGD --lr 0.02 --lr_factor 1 --prototypes_lr 60 --miu 10 --proj_gpm --weight_con 0.2 --log_dir cifar100 --gamma 0.5 --proto_ce 300 --con_begin 299 --dataset cifar100 --run_nums 15 --task_num 10 
