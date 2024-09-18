@@ -20,7 +20,7 @@ Download the MiniImageNet Datasets from [this link](https://www.kaggle.com/white
 
 
 ```shell
-# modify the --dataset_dir with your own data path
+# modify the --dataset_dir with your data path
 bash r-cifar10.sh # Results on CIFAR-10
 bash r-cifar100.sh # Results on CIFAR-100
 bash r-mini.sh # Results on MiniImageNet

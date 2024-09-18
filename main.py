@@ -17,7 +17,7 @@ def get_params():
     parser.add_argument('--batch_size', type=int, default=10, help='(default=%(default)s)')
 
 
-    parser.add_argument('--dataset_dir', type=str, default='/data/dataset/liqiwei/OCL/data/', help='(default=%(default)s)')
+    parser.add_argument('--dataset_dir', type=str, default='', help='(default=%(default)s)')
     parser.add_argument('--task_num', type=int, default=5, help='(default=%(default)s)')
     parser.add_argument('--alpha', type=float, default=2.65, help='(default=%(default)s)')
     parser.add_argument('--gpu_id', type=int, default=0, help='(default=%(default)s)')
@@ -27,17 +27,19 @@ def get_params():
     parser.add_argument('--threshold', type=float, default=0.8, help='(default=%(default)s)')
     parser.add_argument('--optimi', type=str, default='Adam', help='(default=%(default)s)')
     parser.add_argument('--nf', type=int, default=20, help='(default=%(default)s)')
-    parser.add_argument('--test_nme',  action='store_true',help="adopt lwf loss")
+    parser.add_argument('--test_nme',  action='store_true',help="nme classification with prototypes")
     parser.add_argument('--weight_con',  type=float, default=1, help='(default=%(default)s)')
-    parser.add_argument('--prototypes_lr', type=float, default=35, help='(default=%(default)s)')
+    parser.add_argument('--prototypes_lr', type=float, default=35, help='learning rate of prototypes')
     parser.add_argument('--lr_factor', type=float, default=3, help='(default=%(default)s)')
-    parser.add_argument('--miu',  type=float, default=1, help='(default=%(default)s)')
-    parser.add_argument('--proj_gpm',  action='store_true',help="adopt lwf loss")
-    parser.add_argument('--con_begin', type=int, default=0,help="layer gprompt")
-    parser.add_argument('--proto_num', type=int, default=1,help="layer gprompt")
-    parser.add_argument('--proto_ce', type=int, default=1000000,help="layer gprompt")
-    parser.add_argument('--beta', type=float, default=2, help='(default=%(default)s)')
-    parser.add_argument('--gamma', type=float, default=0.5, help='(default=%(default)s)')
+    parser.add_argument('--miu',  type=float, default=1, help='hyperparameter')
+    parser.add_argument('--proj_gpm',  action='store_true',help="gpm for projection layer")
+    parser.add_argument('--con_begin', type=int, default=0,help="the beginning batch of contrastive loss")
+    parser.add_argument('--proto_num', type=int, default=1,help="num of prototypes per class")
+    parser.add_argument('--proto_ce', type=int, default=1000000,help="the beginning batch of prototype cross entropy loss")
+    parser.add_argument('--beta', type=float, default=2, help='hyperparameter')
+    parser.add_argument('--gamma', type=float, default=0.5, help='hyperparameter')
+
+    
     args = parser.parse_args()
     
     return args
