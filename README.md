@@ -37,6 +37,9 @@ If you find this work helpful, please cite:
 @inproceedings{li2024progressive,
   title={Progressive Prototype Evolving for Dual-Forgetting Mitigation in Non-Exemplar Online Continual Learning},
   author={Li, Qiwei and Peng, Yuxin and Zhou, Jiahuan},
-  booktitle={ACM Multimedia 2024}
+  booktitle={Proceedings of the 32nd ACM International Conference on Multimedia},
+  pages={2477--2486},
+  year={2024}
 }
+
 ```
