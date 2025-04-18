@@ -1,5 +1,7 @@
 # Progressive Prototype Evolving for Dual-Forgetting Mitigation in Non-Exemplar Online Continual Learning
-
+<p align="center">
+<a href="https://github.com/zhoujiahuan1991/MM2024-PPE"><img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fzhoujiahuan1991%2FMM2024-PPE&label=PPE&icon=github&color=%233d8bfd"></a>
+</p>
 Official implementation of "[Progressive Prototype Evolving for Dual-Forgetting Mitigation in Non-Exemplar Online Continual Learning](https://openreview.net/forum?id=y5R8XVVA03)"
 
 
